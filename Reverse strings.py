@@ -1,4 +1,4 @@
-N = input("Enter the Number of N:")
+N = input("Enter the Value of N:")
 
 R =" "
 
