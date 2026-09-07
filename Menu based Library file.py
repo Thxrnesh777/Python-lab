@@ -13,19 +13,18 @@ def library_write():
 def library_read():
     F = open("e://library.txt", "r")
 
-    print("-" * 60)
-    print("AccNo\tBookName\tBook Author\tNo. of Copies")
-    print("-" * 60)
+    print("-" * 75)
+    print(f"{'AccNo':<15}{'BookName':<20}{'Book Author':<20}{'No. of Copies':<15}")
+    print("-" * 75)
 
     for dec in F:
         st = dec.strip().split(",")
 
-        print(f"{st[0]}\t{st[1]}\t\t{st[2]}\t\t{st[3]}")
+        print(f"{st[0]:<15}{st[1]:<20}{st[2]:<20}{st[3]:<15}")
 
-    print("-" * 60)
+    print("-" * 75)
 
     F.close()
-
 
 Ch = 0
 
